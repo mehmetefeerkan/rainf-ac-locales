@@ -1,4 +1,5 @@
         print("Locales Loaded.")
+        local L = {}
         L.NoLogBanWebhook = "LogBanWebhook config ayarı bulunamadı. "
         L.NoServerName = "ServerName config ayarı bulunamadı. "
         L.NoModelsLogWebhook = "ModelsLogWebhook config ayarı bulunamadı. "
