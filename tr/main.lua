@@ -1,15 +1,11 @@
+        Citizen.CreateThread(function()
         print("Locales Loaded.")
 
         local L = {}
 
-        ESX = nil
-    
-        TriggerEvent('esx:getSharedObject', function(obj)
-           ESX = obj
-        end)
-
-        TriggerEvent('rainf:getlocales', function(obj)
-           L = obj
+        RegisterServerEvent('rainf:getlocales')
+        AddEventHandler('rainf:getlocales', function(obj)
+                obj(L)
         end)
 
         L.NoLogBanWebhook = "LogBanWebhook config ayarı bulunamadı. "
@@ -65,4 +61,5 @@
         L.AttemptedWeaponGive = "Birine silah vermeyi denedi. "
         L.AttemptedWeaponRemove = "Silah kaldırmayı denedi. "
         L.AttemptedWeaponRemoveAll = "Birinden tüm silahları kaldırmayı denedi. "
+        end)
 
