@@ -1,5 +1,17 @@
         print("Locales Loaded.")
+
         local L = {}
+
+        ESX = nil
+    
+        TriggerEvent('esx:getSharedObject', function(obj)
+           ESX = obj
+        end)
+
+        TriggerEvent('rainf:getlocales', function(obj)
+           L = obj
+        end)
+
         L.NoLogBanWebhook = "LogBanWebhook config ayarı bulunamadı. "
         L.NoServerName = "ServerName config ayarı bulunamadı. "
         L.NoModelsLogWebhook = "ModelsLogWebhook config ayarı bulunamadı. "
