@@ -52,3 +52,4 @@
         L.AttemptedWeaponGive = "Birine silah vermeyi denedi. "
         L.AttemptedWeaponRemove = "Silah kaldırmayı denedi. "
         L.AttemptedWeaponRemoveAll = "Birinden tüm silahları kaldırmayı denedi. "
+
