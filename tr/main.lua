@@ -69,3 +69,12 @@ print("Locales Loaded.")
             L.Phrase_Object = "Obje"
             L.Phrase_Model = "Model"
             L.Phrase_Car = "Araba"
+            Citizen.Wait(1000)
+
+            local lala = L
+            RegisterServerEvent('rainf:gimmeLocales')
+            AddEventHandler('rainf:gimmeLocales', function()
+                 local src = source
+                    TriggerClientEvent('rainf:recieveLocales', src, lala)
+                    print("sending " .. lala.BanReason_Speedhack)    
+            end)
