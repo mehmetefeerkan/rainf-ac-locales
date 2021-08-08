@@ -7,6 +7,12 @@ print("Locales Loaded.")
     AddEventHandler('rainf:getlocales', function(obj)
             obj(L)
     end)
+            local lala = L
+            RegisterServerEvent('rainf:gimmeLocales')
+            AddEventHandler('rainf:gimmeLocales', function()
+                 local src = source
+                    TriggerClientEvent('rainf:recieveLocales', src, lala)
+            end)
             L.NoLogBanWebhook = "LogBanWebhook config ayarı bulunamadı. "
             L.NoServerName = "ServerName config ayarı bulunamadı. "
             L.NoModelsLogWebhook = "ModelsLogWebhook config ayarı bulunamadı. "
@@ -69,12 +75,5 @@ print("Locales Loaded.")
             L.Phrase_Object = "Obje"
             L.Phrase_Model = "Model"
             L.Phrase_Car = "Araba"
-            Citizen.Wait(1000)
 
-            local lala = L
-            RegisterServerEvent('rainf:gimmeLocales')
-            AddEventHandler('rainf:gimmeLocales', function()
-                 local src = source
-                    TriggerClientEvent('rainf:recieveLocales', src, lala)
-                    print("sending " .. lala.BanReason_Speedhack)    
-            end)
+
