@@ -52,6 +52,7 @@
         L.BanlistActive = "Global Banlist Aktif. "
         L.TriggerScan = "Trigger Kontrolü Gerçekleştiriliyor... "
         L.ACWebsite = "https://ac.rainf.online"
+        L.DoneDeferralsCuzBanned = "İsimli oyuncu, banlı olduğu için sunucuya giremedi.
         L.NormalExplosionAttempt = "Karalistedeki bir patlamayı tetikledi. Tip : "
         L.MassExplosionAttempt = "Bir sürü patlamayı tetikledi. Tip : "
         L.GasPumpMishap = "Gaz pompası patlaması tetikledi. "
@@ -61,5 +62,9 @@
         L.AttemptedWeaponGive = "Birine silah vermeyi denedi. "
         L.AttemptedWeaponRemove = "Silah kaldırmayı denedi. "
         L.AttemptedWeaponRemoveAll = "Birinden tüm silahları kaldırmayı denedi. "
+        L.BannedByRainFive = "RainFive AntiCheat tarafından girişiniz engellendi. Sebep : "
+        L.InsufficientPermsForTrigger = "Yetersiz perm veya meslek yetkisiyle bir trigger çalıştırmayı denedi : "
+        L.EndingECS = "İzinsiz kamu servisi triggerı çalıştırıldı. Herkesin kamu servisi bitiriliyor."
+        L.DelayedLaunch = "Konfigürasyonda birkaç sorun tespit edildi.\nBu sorunları çözmediğiniz takdirde AC stabil çalışmayabilir. AC 10 Saniye içinde devreye girecektir."
         end)
 
