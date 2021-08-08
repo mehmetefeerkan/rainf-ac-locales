@@ -1,5 +1,12 @@
 
+print("Locales Loaded.")
 
+    local L = {}
+
+    RegisterServerEvent('rainf:getlocales')
+    AddEventHandler('rainf:getlocales', function(obj)
+            obj(L)
+    end)
             L.NoLogBanWebhook = "LogBanWebhook config ayarı bulunamadı. "
             L.NoServerName = "ServerName config ayarı bulunamadı. "
             L.NoModelsLogWebhook = "ModelsLogWebhook config ayarı bulunamadı. "
@@ -62,4 +69,3 @@
             L.Phrase_Object = "Obje"
             L.Phrase_Model = "Model"
             L.Phrase_Car = "Araba"
-            print("Locales Loaded.")
