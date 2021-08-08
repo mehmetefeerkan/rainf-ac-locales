@@ -1,12 +1,4 @@
-Citizen.CreateThread(function()
-    print("Locales Loaded.")
 
-    local L = {}
-
-    RegisterServerEvent('rainf:getlocales')
-    AddEventHandler('rainf:getlocales', function(obj)
-            obj(L)
-    end)
 
             L.NoLogBanWebhook = "LogBanWebhook config ayarı bulunamadı. "
             L.NoServerName = "ServerName config ayarı bulunamadı. "
@@ -70,5 +62,4 @@ Citizen.CreateThread(function()
             L.Phrase_Object = "Obje"
             L.Phrase_Model = "Model"
             L.Phrase_Car = "Araba"
-
-end)
+            print("Locales Loaded.")
