@@ -69,6 +69,7 @@ print("Locales Loaded.")
             L.InsufficientPermsForTrigger = "Yetersiz perm veya meslek yetkisiyle bir trigger çalıştırmayı denedi : "
             L.EndingECS = "İzinsiz kamu servisi triggerı çalıştırıldı. Herkesin kamu servisi bitiriliyor."
             L.DelayedLaunch = "Konfigürasyonda birkaç sorun tespit edildi.\nBu sorunları çözmediğiniz takdirde AC stabil çalışmayabilir. AC 10 Saniye içinde devreye girecektir."
+            L.CallbackLimitExceeded = "Özel callback/trigger spam limiti aşıldı. Son kullanılan callback/event: "
             L.Phrase_BlacklistedVehicle = "Yasaklı Araç"
             L.Phrase_BlacklistedObject = "Yasaklı Obje"
             L.Phrase_Player = "Oyuncu"
